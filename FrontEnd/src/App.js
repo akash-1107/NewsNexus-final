@@ -16,17 +16,17 @@ const App = ()=> {
         <NavBar/> 
    <LoadingBar height={3} color='#f11946' progress={progress} />
         <Routes>
-          <Route exact path="/"><News setProgress={setProgress} apiKey={0} key="general" pageSize={pageSize} country="in" category="general"/></Route> 
+          <Route exact path="/"  element={<News setProgress={setProgress} apiKey={0} key="general" pageSize={pageSize} country="in" category="general"/>}/>
 
-          <Route exact path="/business"><News setProgress={setProgress} apiKey={1} key="business" pageSize={pageSize} country="in" category="business"/></Route>
+          <Route exact path="/business"element={<News setProgress={setProgress} apiKey={1} key="business" pageSize={pageSize} country="in" category="business"/>}/>
 
-          <Route exact path="/entertainment"><News setProgress={setProgress} apiKey={2} key="entertainment" pageSize={pageSize} country="in" category="entertainment"/></Route> 
+          <Route exact path="/entertainment"element= {<News setProgress={setProgress} apiKey={2} key="entertainment" pageSize={pageSize} country="in" category="entertainment"/>}/>
 
-          <Route exact path="/sports"><News setProgress={setProgress} apiKey={3} key="sports" pageSize={pageSize} country="in" category="sports"/></Route> 
+          <Route exact path="/sports"element= {<News setProgress={setProgress} apiKey={3} key="sports" pageSize={pageSize} country="in" category="sports"/>}/>
 
-          <Route exact path="/health"><News setProgress={setProgress} apiKey={4} key="health" pageSize={pageSize} country="in" category="health"/></Route>
+          <Route exact path="/health" element= {<News setProgress={setProgress} apiKey={4} key="health" pageSize={pageSize} country="in" category="health"/>}/>
            
-          <Route exact path="/science"><News setProgress={setProgress} apiKey={5} key="science" pageSize={pageSize} country="in" category="science"/></Route>
+          <Route exact path="/science"element= {<News setProgress={setProgress} apiKey={5} key="science" pageSize={pageSize} country="in" category="science"/>}/>
         </Routes>
         </Router>
       </div>
